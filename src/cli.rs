@@ -1,11 +1,12 @@
 mod common;
 mod settings;
 
-use clap::Parser;
-use segment::segment_constructor::load_segment;
 use std::path::Path;
-use tokio::runtime::Runtime;
+
+use clap::Parser;
 use collection::collection::Collection;
+use segment::segment_constructor::load_segment;
+use tokio::runtime::Runtime;
 
 #[derive(Parser, Debug)]
 #[clap(version, about)]
